@@ -10,3 +10,34 @@ img, video, audio, iframe, table, form {
 .row {
 	margin-bottom: 20px;
 }
+
+/*/////// CAROUSEL STYLES ////////*/
+
+#carousel-example-generic .item img {
+	height: default;
+}
+
+.carousel-caption p {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) { /* Bootstrap default for xs devices (phones) */
+	#carousel-example-generic .item img {
+	  height: 384px; /* 768/2= 384 */
+    }
+}
+
+@media only screen and (min-width: 992px) { /* Bootstrap default for sm devices (tablets) */
+	#carousel-example-generic .item img {
+	  height: 496px; /* 992/2= 496 */
+    }
+    .carousel-caption p {
+	    display: block;
+    }
+}
+
+@media only screen and (min-width: 1200px) { /* Bootstrap default for md devices (desktops) */
+	#carousel-example-generic .item img {
+	  height: 600px;
+    }
+}
